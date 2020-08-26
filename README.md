@@ -1,6 +1,7 @@
 # python_AI
 
-## 0.0 Tic-Tac-Toe
+## 0. Search
+### 0.0 Tic-Tac-Toe
 <b>Using Minimax, implement an AI to play Tic-Tac-Toe optimally.</b>
 
 Only worked for the functinos within tictactoe.py.
@@ -11,10 +12,11 @@ Only worked for the functinos within tictactoe.py.
 - Step by Step: Alpha Beta Pruning
   -  https://www.youtube.com/watch?v=xBXHtz4Gbdo&feature=emb_logo
 
-## 0.1 Degrees
+### 0.1 Degrees
 Using Minimax, implement an AI to play Tic-Tac-Toe optimally.
 
-## 1.0 Knights
+## 1. Knowledge
+### 1.0 Knights
 Write a program to solve logic puzzles.
 
 Added knowledge to knowledge bases knowledge0, knowledge1, knowledge2, and knowledge3 to solve the following puzzles.
