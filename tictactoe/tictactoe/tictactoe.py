@@ -164,7 +164,7 @@ Recursive functions will be implemented
 until the board is terminal state
 """
 
-def max_value(board, Max, Min):
+def max_value(board, alpha, beta):
     """
     Returns the choice of which value is maximum at given board
     under the condition that the opponent is tryting to minimize the score
@@ -175,18 +175,19 @@ def max_value(board, Max, Min):
     v = float("-inf")
     move = None
     for action in actions(board):
-        test = min_value(result(board, action), Max, Min)[0]
-        Max = max(Max, test)
+        test = min_value(result(board, action), alpha, beta)[0]
+        alpha = max(alpha, test)
         if test > v :
             v = test
             move = action
-        ### ???
-        if Max >= Min:
+        # β cut-off
+        # 자신이 상대방보다 유리하여, 상대방이 그 경우를 선택하지 않을 확률이 높을 때 불필요한 연산을 잘라내는 것
+        if alpha >= beta:
             break
     return [v, move]
         
 
-def min_value(board, Max, Min):
+def min_value(board, alpha, beta):
     """
     Returns the choice of which value is minimum at given board
     under the condition that the opponent is tryting to maximize the score
@@ -200,11 +201,13 @@ def min_value(board, Max, Min):
     for action in actions(board):
         # recursion implemented until 
         # the outcome of given action is presented
-        test = max_value(result(board, action), Max, Min)[0]
-        Min = min(Min, test)
+        test = max_value(result(board, action), alpha, beta)[0]
+        beta = min(beta, test)
         if test < v :
             v = test
             move = action
-        if Max >= Min:
+        # α cut-off
+        # 자신이 상대방보다 불리하여, 자신이 그 경우를 선택하지 않을 때 불필요한 연산을 잘라내는 것
+        if alpha >= beta:
             break
     return [v, move]
