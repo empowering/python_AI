@@ -10,3 +10,7 @@ Only worked for the functinos within tictactoe.py.
   -  https://www.youtube.com/watch?time_continue=22&v=zDskcx8FStA&feature=emb_logo
 - Step by Step: Alpha Beta Pruning
   -  https://www.youtube.com/watch?v=xBXHtz4Gbdo&feature=emb_logo
+
+## 0.1 Degrees
+Using Minimax, implement an AI to play Tic-Tac-Toe optimally.
+
