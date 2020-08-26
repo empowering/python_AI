@@ -7,6 +7,6 @@ Only worked for the functinos within tictactoe.py.
 
 <b> references ) </b>
 - A simple animation of the Minimax algorithm
-  https://www.youtube.com/watch?time_continue=22&v=zDskcx8FStA&feature=emb_logo
+  -  https://www.youtube.com/watch?time_continue=22&v=zDskcx8FStA&feature=emb_logo
 - Step by Step: Alpha Beta Pruning
-  https://www.youtube.com/watch?v=xBXHtz4Gbdo&feature=emb_logo
+  -  https://www.youtube.com/watch?v=xBXHtz4Gbdo&feature=emb_logo
